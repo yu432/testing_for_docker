@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
     texlive-generic-extra \
     apt-get install texlive-bibtex-extra biber
 
-COPY ./docker-cv /home
+RUN git clone https://github.com/yu432/testing_for_docker.git
 
 CMD [ "bash" ]
 

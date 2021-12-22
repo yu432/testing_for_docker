@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
     texlive-lang-cyrillic \
     texlive-science \
     cm-super \
-    texlive-generic-extra 
+    texlive-generic-extra \
+    apt-get install texlive-bibtex-extra biber
 
 COPY ./docker-cv /home
 

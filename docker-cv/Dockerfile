@@ -18,5 +18,6 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 RUN git clone https://github.com/yu432/testing_for_docker.git
 
+RUN cd testing_for_docker/docker-cv/Simple-CV/ && pdflatex main.tex
 CMD [ "bash" ]
 

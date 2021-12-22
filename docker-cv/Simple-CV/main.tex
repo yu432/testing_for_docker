@@ -7,7 +7,11 @@
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
 \def\theme{MidnightBlue}
-\renewcommand{\textnumero}{{\mathrm{C}\!\!\!\!\!\!=}} 
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\savesymbol{iint}
+\usepackage{txfonts} % this is the font
+\restoresymbol{TXF}{iint}
+\usepackage{textcomp}
 % More predefined colors can be found in 
 % https://en.wikibooks.org/wiki/LaTeX/Colors
 % Example photograph taken from Wikimedia Commons
